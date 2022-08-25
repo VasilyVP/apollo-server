@@ -1,0 +1,15 @@
+input AuthorInput {
+    name: String
+    age: Int
+}
+
+input AddBookInput {
+    title: String
+    author: AuthorInput
+}
+
+"Mutation described here"
+type Mutation {
+    "To add new book to collection"
+    addBook(book: AddBookInput!): Book
+}

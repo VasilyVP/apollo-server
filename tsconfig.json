@@ -1,0 +1,53 @@
+{
+    //"extends": "../../tsconfig.base",
+    "compilerOptions": {
+        "composite": true,
+        "target": "es2019",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "sourceMap": true,
+        "declaration": true,
+        "declarationMap": true,
+        "removeComments": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitOverride": false,
+        "noFallthroughCasesInSwitch": true,
+        "noUnusedParameters": false,
+        "noUnusedLocals": false,
+        "forceConsistentCasingInFileNames": true,
+        //"importsNotUsedAsValues": "error",
+        "lib": [
+            "es2019",
+            "esnext.asynciterable"
+        ],
+        "types": [
+            "node",
+            "jest"
+        ],
+        "baseUrl": ".",
+        "paths": {
+            "*": [
+                "types/*"
+            ]
+        },
+        "rootDir": "./src",
+        "outDir": "./build"
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "**/__tests__"
+    ],
+    /* "references": [
+        {
+            "path": "../apollo-server-core"
+        },
+        {
+            "path": "../apollo-server-express"
+        },
+    ] */
+}

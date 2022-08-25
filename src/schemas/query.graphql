@@ -1,0 +1,32 @@
+"Type description"
+type Book {
+    "book title"
+    title: String
+    """
+    book's author
+    """
+    author: Author
+}
+
+type Film {
+    title: String
+    producer: String
+}
+
+union Asset = Film | Book
+
+type Author {
+    name: String
+    age: Int
+    books: [Book]
+}
+
+"Query"
+type Query {
+    "get books"
+    books: [Book]
+    "get authors"
+    authors: [Author]
+    author(name: String!): Author
+    assets: [Asset]
+}
