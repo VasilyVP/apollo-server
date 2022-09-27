@@ -5,6 +5,9 @@
   "main": "index.ts",
   "scripts": {
     "start": "nodemon ./src/index.ts",
+    "build": "node build.js",
+    "start:prod_l": "node ./build/index.js",
+    "start:prod": "pm2 start ecosystem.config.js",
     "test": "jest"
   },
   "repository": {
@@ -26,6 +29,7 @@
     "apollo-server": "^3.10.1",
     "apollo-server-core": "^3.10.1",
     "dataloader": "^2.1.0",
+    "fs-extra": "^10.1.0",
     "graphql": "^16.6.0"
   },
   "devDependencies": {
