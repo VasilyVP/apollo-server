@@ -6,8 +6,8 @@
   "scripts": {
     "start": "nodemon ./src/index.ts",
     "build": "node build.js",
-    "start:prod_l": "node ./build/index.js",
-    "start:prod": "pm2 start ecosystem.config.js",
+    "start:prod": "node ./build/index.js",
+    "start:prod_pm2": "pm2 start ecosystem.config.js",
     "test": "jest"
   },
   "repository": {
