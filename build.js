@@ -8,7 +8,7 @@ const schemas = './src/schemas';
 
 fse.emptyDirSync(build);
 
-execSync('tsc --build');
+execSync('npx tsc --build');
 
 fse.copySync(schemas, builtSchemas, {
     filter: file => path.extname(file) === '.ts' ? false : true,
