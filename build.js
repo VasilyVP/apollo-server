@@ -8,6 +8,7 @@ const schemas = './src/schemas';
 
 fse.emptyDirSync(build);
 
+execSync('npx tsc --build --clean');
 execSync('npx tsc --build');
 
 fse.copySync(schemas, builtSchemas, {
