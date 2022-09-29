@@ -6,6 +6,7 @@
   "scripts": {
     "start": "nodemon ./src/index.ts",
     "build": "node build.js",
+    "build:aws": "npm install && node build.js",
     "start:prod": "node ./build/index.js",
     "start:prod_aws": "node ./build/index.js",
     "start:prod_pm2": "pm2 start ecosystem.config.js",
